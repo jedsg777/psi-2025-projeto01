@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="mulheres-container">
+  <h2 style="text-align: center; color: #820ad1; margin-bottom: 30px;">
+    {{politica.mulherpol}}
+  </h2>
+
+  <div class="mulherdecard" style="width: 100%; max-width: 800px; margin: auto;">
+    <p>{{ historias.historia1 }}</p>
+    <p>{{ historias.historia2 }}</p>
+    <p>{{ historias.historia3 }}</p>
+  </div>
+</section>
+{% endblock %}

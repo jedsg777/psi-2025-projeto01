@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="mulheres-container">
+  {% for figura in mulheres %}
+    <div class="mulher-card">
+      <img src="{% static figura.imagem %}" alt="Foto de {{ figura.nome }}">
+      <h3>{{ figura.nome }}</h3>
+      <p>{{ figura.idade }} anos - {{ figura.nascimento }}</p>
+      <p>{{ figura.datanasc }}</p>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}

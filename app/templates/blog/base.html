@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mulheres na Política - Início</title>
+  <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'index' %}">Início</a></li>
+        <li><a href="{% url 'mulheres' %}">figuras</a></li>
+        <li><a href="{% url 'historia' %}">biografia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer>
+    <p>site de joão emanuel</p>
+  </footer>
+</body>
+</html>

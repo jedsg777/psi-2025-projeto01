@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% load static %} 
+{% block content %}
+  <section>
+    <h2>{{inicio.titulo}}</h2>
+    <p>
+      {{inicio.paragrafo}}
+    </p>
+
+    <h3>{{inicio.resumo}}</h3>
+    <ul>
+      <li><strong>{{inicio.importancia}}</strong></li> 
+      <li><strong>{{inicio.tempo}}</strong></li>
+      <li><strong>{{inicio.premiacao}}</strong></li>
+    </ul>
+    
+  </section>
+{% endblock %}
